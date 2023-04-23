@@ -1,0 +1,111 @@
+:root {
+    --color-white: #ffff;
+    --color-dark-a: #111016;
+    --color-dark-b: #1a1a1f;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: sans-serif;
+    background-color: var(--color-dark-b);
+}
+
+.header, .navegation-header {
+    display: flex;
+    flex-direction: row; /* ficar um ao lado do outro*/
+    align-items: center; /*coloca o itens no centro no meio*/
+}
+
+.header {
+    background-color: var(--color-dark-a);
+    height: 7.5em;
+    justify-content: space-between;/*coloca espaço entre os elemantos ex: (el1 ----- el2)*/
+    padding: 0 10%;
+    color: white;
+    text-decoration: none;
+}
+
+.navegation-header {
+    gap: 3em; /*espaço entre os elementos*/
+    font-family: sans-serif;       
+}
+
+.active {
+    background-color: var(--color-dark-b);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.content {
+    padding-top: 3em;
+    height: 100vh;
+    transition:1s;
+    background-color: var(--color-dark-b);
+    color: white;
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.perfil-text {
+    padding-top: 9em;
+    padding-left: 10em;
+    text-align: left;
+}
+
+.btn-icon-content {
+    background-color: transparent;
+    color: var(--color-white);
+    border: none;
+}
+
+.btn-icon-header {
+    background-color: transparent;
+    color: var(--color-white);
+    border: none;
+}
+
+.btn-icon-header svg {
+    width: auto;
+    height: 1.5em;
+}
+
+.perfil-text p {
+    font-size: 20px;
+    padding-top: 10px;
+    color: #9e9e9e;
+}
+
+img {
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.perfil-img {
+    margin-right: 16em;
+}
+
+.btn-icon-content svg {
+    padding-left: 20px;
+    width: auto;
+    height: 1.3em;
+}
+
+.notification {
+    display: flex;
+    width: 300px;
+    height: 60px;
+    background-color: var(--color-dark-a);
+}
+
+.notification p button{
+    font-size: 15px;
+}
