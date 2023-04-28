@@ -148,12 +148,16 @@ header {
     width: 10vw;
     height: 4vw;
     margin: 0.5em;
+    border-radius: 2px;
 }
 
 .information p {
-    font-size: 1em;
-    margin-left: 20vw;
-
+    font-size: 3vh;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    margin: 2em;
 }
 
 .information {
@@ -194,6 +198,12 @@ img {
         align-items: start;
         padding-top: 1px;
         font-size: 10px;
+    }
+    .information p {
+        font-size: 5vw;
+        margin: 1em;
+        display: flex;
+        flex-direction: row;
     }
     .information {
         width: 90%;
